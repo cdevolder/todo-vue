@@ -1,7 +1,21 @@
 html,
 body {
+	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../assets/HD_background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button {
@@ -24,7 +38,7 @@ body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
 	background: #f5f5f5;
-	color: #4d4d4d;
+	color: #57606f;
 	min-width: 230px;
 	max-width: 550px;
 	margin: 0 auto;
@@ -72,9 +86,9 @@ body {
 	top: -155px;
 	width: 100%;
 	font-size: 100px;
-	font-weight: 100;
+	font-weight: 130;
 	text-align: center;
-	color: rgba(175, 47, 47, 0.15);
+	color: rgba(50, 0, 47, 0.15);
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
