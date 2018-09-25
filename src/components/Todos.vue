@@ -2,7 +2,7 @@
   <section class='todoapp'>
     <header class='header'>
       <h1>Todos</h1>
-      <input type="text" class="new-todo" placeholder="Ajouter une tache" v-model="newTodo" @keyup.enter="addTodo">
+      <input type="text" class="new-todo" placeholder="Add new task" v-model="newTodo" @keyup.enter="addTodo">
     </header>
     <div class="main">
       <input id="toggle-all" type="checkbox" class="toggle-all" v-model="allDone">
@@ -19,13 +19,13 @@
       </ul>
     </div>
     <footer class="footer" v-show="hasTodos">
-      <span class="todo-count"><strong>{{ remaining }}</strong> taches a faire</span>
+      <span class="todo-count"><strong>{{ remaining }}</strong> tasks to do</span>
       <ul class="filters">
-        <li><a href="#" :class="{selected: filter === 'all'}" @click.prevent="filter = 'all'">Toutes</a></li>
-        <li><a href="#" :class="{selected: filter === 'todo'}" @click.prevent="filter = 'todo'">A faire</a></li>
-        <li><a href="#" :class="{selected: filter === 'done'}" @click.prevent="filter = 'done'">Faites</a></li>
+        <li><a href="#" :class="{selected: filter === 'all'}" @click.prevent="filter = 'all'">All</a></li>
+        <li><a href="#" :class="{selected: filter === 'todo'}" @click.prevent="filter = 'todo'">To do</a></li>
+        <li><a href="#" :class="{selected: filter === 'done'}" @click.prevent="filter = 'done'">Done</a></li>
       </ul>
-      <button class="clear-completed" v-show="completed" @click.prevent="deleteCompleted()">Supprimer done</button>
+      <button class="clear-completed" v-show="completed" @click.prevent="deleteCompleted()">Delete done tasks</button>
     </footer>
   </section>
 </template>
